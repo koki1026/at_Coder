@@ -17,7 +17,7 @@ int main(){
     }
 
     vector<int> color(n,-1);
-    auto bfs = [&](auto bfs, int v, int c=0) -> bool{
+    auto bfs = [&](auto bfs, int v, int c=0) -> bool {
       if(color[v]!=-1) return color[v]==c;
       color[v] = c;
       for(int u : to[v]){
