@@ -5,5 +5,14 @@ using ll = long long;
 
 int main(){
     int i=0, j=0;
+    int n,m;
+    cin >> n >> m;
+    int answer=0;
+    rep(i,n){
+      int c;
+      cin >> c;
+      if(c>=m) answer++;
+    }
+    cout << answer << endl;
     return 0;
 }
